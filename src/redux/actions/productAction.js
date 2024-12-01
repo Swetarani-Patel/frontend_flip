@@ -10,7 +10,7 @@ import {
   GET_PRODUCT_DETAIL_REQUEST,
   GET_PRODUCT_DETAIL_SUCCESS,
 } from "../actionTypes";
-const URL = "http://localhost:8000"
+const URL = "https://backend-flip.onrender.com"
 
 export const getProducts = () => async (dispatch) => {
   try {

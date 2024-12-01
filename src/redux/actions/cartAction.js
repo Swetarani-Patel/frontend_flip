@@ -2,7 +2,7 @@ import axios from "axios";
 import { ADD_TO_CART, ADD_TO_CART_ERROR, DEC_QUANTITY, EMPTY_CART, INC_QUANTITY, REMOVE_FROM_CART } from "../actionTypes";
 
 
-const URL = "http://localhost:8000";
+const URL = "https://backend-flip.onrender.com";
 export const addToCart = (id)=>async(dispatch)=>{
     try{
      const {data} = await axios.get(`${URL}/product/${id}`)
